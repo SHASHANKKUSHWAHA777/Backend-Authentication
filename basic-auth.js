@@ -7,12 +7,13 @@ app.get("/signin",function(req,res){
     const password = req.query.password
 
     if (username == "shashank" && password == "midascreak"){
-        //do something with kidney here
+        //xyz logic
         res.json({
             msg : "your kidney is fine"
         })
     }
     res.status(400).json({msg : "somethings up with your inputs"})
 })
+
 
 app.listen(port)
